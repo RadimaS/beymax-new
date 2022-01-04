@@ -13,6 +13,25 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="js/chief-slider.min.css"
+    />
+
+    <script defer src="js/chief-slider.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = new ChiefSlider(".slider", {
+          loop: true,
+          autoplay: true,
+          interval: 2000,
+        });
+      });
+    </script>
   </head>
   <body>
     <header class="header header--mobile--fixed">
@@ -21,9 +40,9 @@
           <div class="header-icon">
             <a href="#">
               <img
-                class="header__logo"
+                class="header__icon"
                 src="img/header-icon.png"
-                alt="icon: cloud"
+                alt="icon: cute cloud"
               />
             </a>
           </div>
@@ -38,5 +57,48 @@
       <!-- /.container -->
     </header>
     <!-- /.header header--mobile--fixed -->
+    <section class="slider" id="slider_bl">
+      <div class="wrapper">
+        <input checked type="radio" name="slider" id="slide1" />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <div class="slider-wrapper">
+          <div class="inner">
+            <article>
+              <div class="info top-left">
+                <h1>Новая роль</h1>
+                <h4>Почувствуй себя студентом</h4>
+              </div>
+              <div class="someth"><img src="img/students.png" /></div>
+            </article>
+            <article>
+              <div class="info top-left">
+                <h1>Выбор</h1>
+                <h4>Выбери то, что по душе именно тебе</h4>
+              </div>
+              <div class="someth"><img src="img/choise.png" /></div>
+            </article>
+            <article>
+              <div class="info top-left">
+                <h1>В путь!</h1>
+                <h4>Определи свое направление</h4>
+              </div>
+              <div class="someth"><img src="img/road.png" /></div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-prev-next-control">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+        <div class="slider-dot-control">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
