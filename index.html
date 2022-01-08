@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,52 +67,65 @@
     </header>
     <!-- /.header header--mobile--fixed -->
     <section class="slider" id="slider_bl">
-      <div class="wrapper">
-        <input checked type="radio" name="slider" id="slide1" />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-        <input type="radio" name="slider" id="slide4" />
-        <div class="slider-wrapper">
-          <div class="inner">
-            <article>
-              <div class="info top-left">
-                <h1>Новая роль</h1>
-                <h4 class="info__text">Почувствуй себя студентом</h4>
-              </div>
-              <div class="someth"><img src="img/students.png" /></div>
-            </article>
-            <article>
-              <div class="info top-left">
-                <h1>Выбор</h1>
-                <h4 class="info__text">Выбери то, что по душе именно тебе</h4>
-              </div>
-              <div class="someth"><img src="img/choise.png" /></div>
-            </article>
-            <article>
-              <div class="info top-left">
-                <h1>В путь!</h1>
-                <h4 class="info__text">Определи свое направление</h4>
-              </div>
-              <div class="someth"><img src="img/road.png" /></div>
-            </article>
+      <div class="container">
+        <div class="wrapper">
+          <input checked type="radio" name="slider" id="slide1" />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
+          <div class="slider-wrapper">
+            <div class="inner">
+              <article class="article">
+                <div class="info top-left">
+                  <h1>Новая роль</h1>
+                  <h4 class="info__text">Почувствуй себя студентом</h4>
+                </div>
+                <div class="someth">
+                  <img class="article__img" src="img/students.png" />
+                </div>
+              </article>
+              <article class="article">
+                <div class="info top-left">
+                  <h1>Выбор</h1>
+                  <h4 class="info__text">Выбери то, что по душе именно тебе</h4>
+                </div>
+                <div class="someth">
+                  <img class="img2" src="img/choise.png" />
+                </div>
+              </article>
+              <article class="article">
+                <div class="info top-left">
+                  <h1>В путь!</h1>
+                  <h4 class="info__text">Определи свое направление</h4>
+                </div>
+                <div class="someth">
+                  <img class="article__img" src="img/road.png" />
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="slider-prev-next-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+          <div class="slider-dot-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
           </div>
         </div>
-        <div class="slider-prev-next-control">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
-        <div class="slider-dot-control">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
       </div>
+      <!-- /.container -->
     </section>
     <div class="about">
       <div class="container">
         <div class="about-wrapper">
-          <p class="about__text">BEYMAX - это платформа, призванная облегчить выбор вуза и направления обучения. Здесь вы можете ознакомиться с программой обучения вузов и тем самым примерить на себе роль студента.</p>
+          <p class="about__text">
+            BEYMAX - это платформа, призванная облегчить выбор вуза и
+            направления обучения. Здесь вы можете ознакомиться с программой
+            обучения вузов и тем самым примерить на себе роль студента.
+          </p>
           <button class="about__button">Приступить</button>
         </div>
         <!-- /.about-wrapper -->
@@ -117,6 +133,5 @@
       <!-- /.container -->
     </div>
     <!-- /.about -->
-
   </body>
 </html>
