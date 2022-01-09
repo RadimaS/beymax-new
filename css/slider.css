@@ -5,7 +5,13 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/Bebas-Neue.woff") format("woff"),
-    url("../fonts/Bebas-Neue.ttf") format("truetype");
+    url("../fonts/Bebas-Neue.ttf") format("truetype"),
+    url("../fonts/HelveticaNeueBoldCondensed.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeueBoldCondensed.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
@@ -126,22 +132,6 @@ button {
   font-size: 20px;
   font-family: "Comfortaa";
 }
-/* #slider_bl .info.top-left {
-  top: 30px;
-  left: 30px;
-} */
-/* #slider_bl .info.top-right {
-  top: 30px;
-  right: 30px;
-} */
-/* #slider_bl .info.bottom-left {
-  bottom: 30px;
-  left: 30px;
-}
-#slider_bl .info.bottom-right {
-  bottom: 30px;
-  right: 30px;
-} */
 #slider_bl .slider-wrapper {
   width: 100%;
   overflow: hidden;
@@ -187,11 +177,11 @@ button {
 #slider_bl
   #slide3:checked
   ~ .slider-prev-next-control
-  label:nth-child(2)::after,
+  label:nth-child(1)::after,
 #slider_bl
   #slide3:checked
   ~ .slider-prev-next-control
-  label:nth-child(1)::after {
+  label:nth-child(2)::after {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 400;
@@ -283,7 +273,6 @@ button {
     padding: 0 80px;
   }
 }
-/* #sourceMappingURL=slider.css.map */
 @media (max-width: 1440px) {
   .container {
     max-width: 1200px;
@@ -417,6 +406,7 @@ button {
     ~ .slider-prev-next-control
     label:nth-child(2)::after {
     padding-left: 5px;
+    margin-top: -2px;
   }
   #slider_bl
     #slide1:checked
@@ -431,6 +421,7 @@ button {
     ~ .slider-prev-next-control
     label:nth-child(1)::after {
     padding-left: 10px;
+    margin-top: -2px;
   }
   #slider_bl .slider-prev-next-control label {
     width: 30px;
@@ -441,26 +432,34 @@ button {
   .container {
     max-width: 380px !important;
   }
-  #slider_bl article img {
-    margin-left: 185px;
-    width: 160px;
-    height: 100px;
+ #slider_bl article img {
+    margin-left: 140px;
+    width: 200px;
+    height: 145px;
   }
   #slider_bl article .img2 {
-    margin-left: 190px;
+    margin-left: 140px;
   }
   #slider_bl .info {
-    margin-left: 50px;
+    margin-left: 0;
+    top: 30px;
+    left: 85px;
+    text-align: center !important;
   }
   #slider_bl .info h1 {
     font-size: 30px;
   }
   #slider_bl .info h4 {
     font-size: 12px;
-    width: 155px;
+    width: 200px;
   }
   #slider_bl article {
-    height: 210px;
+    height: 280px;
+  }
+  .someth {
+    position: relative;
+    top: 50px;
+    right: 45px;
   }
 }
 @media (max-width: 380px) {

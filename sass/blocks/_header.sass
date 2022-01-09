@@ -1,5 +1,6 @@
 .header
-  padding: 38px 0
+  background: inherit
+  padding: 38px 0 15px
   &-wrapper
     display: flex
     justify-content: flex-start
@@ -16,3 +17,12 @@
   &__subtitle
     // margin-top: 5px
     font-size: 15px
+  &--mobile
+    &--fixed
+      position: fixed
+      left: 0
+      right: 0
+      top: 0
+      z-index: 99
+body
+  padding-top: 90px
