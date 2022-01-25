@@ -19,6 +19,19 @@
   src: url("../fonts/Akrobat-Regular.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Catorze27Style1-SemiBold";
+  src: url("../fonts/catorze27style1-semibold.woff") format("woff"),
+    url("../fonts/catorze27style1-semibold.woff2") format("woff2");
+}@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/ubuntu_bold.woff") format("woff"),
+    url("../fonts/ubuntu_bold.woff2") format("woff2");
+}@font-face {
+  font-family: "MyriadPro-Cond";
+  src: url("../fonts/myriadpro-cond.woff") format("woff"),
+    url("../fonts/myriadpro-cond.woff2") format("woff2");
+}
 body {
   font-family: sans-serif;
   margin: 0;
@@ -234,7 +247,7 @@ button {
   ~ .slider-prev-next-control
   label:nth-child(2)::after {
   content: "\f104";
-  padding-left: 8px;
+  padding-left: 10px;
 }
 #slider_bl #slide1:checked ~ .slider-dot-control label:nth-child(1),
 #slider_bl #slide2:checked ~ .slider-dot-control label:nth-child(2),

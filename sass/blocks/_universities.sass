@@ -2,18 +2,22 @@
   margin-top: 50px
   &-wrapper
     z-index: 99
+  &-mainblock
+    display: flex
+    height: 650px
   &-text
-    margin-bottom: 50px
-    text-align: center
+    align-items: center
   &__title
-    font-family: 'Bebas Neue'
-    font-size: 55px
-    color: $text-color
-    text-transform: uppercase
+    font-family: 'Catorze27Style1-SemiBold' //MyriadPro-Cond
+    font-size: 70px
+    font-weight: bold
+    color: black
+    // text-transform: uppercase
   &__subtitle
     font-family: 'Comfortaa'
-    font-size: 30px
-    color: $text-color
+    font-size: 20px
+    color: black
+    font-weight: bold
   &__img
     // object-fit: cover
     width: 100%
@@ -21,5 +25,33 @@
     margin-bottom: 20px
   &__circles
     z-index: 333
+  &-icons
+    text-align: center
+  &__icon
+    width: 500px
+    &--icon1
+      position: relative
+      top: -100px
+      left: 1px
+      right: 1px
+      z-index: 70
+    &--icon2
+      position: relative
+      top: -210px
+      left: -170px
+      width: 450px
+      right: 1px
+      z-index: 80
+    &--icon3
+      position: relative
+      top: -465px
+      width: 430px
+      left: 170px
+      right: 1px
+      z-index: 90    
+
 .body
-  background-color: #414650
+  background-color: #797c83//#585a5f
+.header
+  &__titleV2, &__subtitleV2
+    color: #000
