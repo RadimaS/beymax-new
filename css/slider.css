@@ -23,14 +23,21 @@
   font-family: "Catorze27Style1-SemiBold";
   src: url("../fonts/catorze27style1-semibold.woff") format("woff"),
     url("../fonts/catorze27style1-semibold.woff2") format("woff2");
-}@font-face {
+}
+@font-face {
   font-family: "Ubuntu Bold";
   src: url("../fonts/ubuntu_bold.woff") format("woff"),
     url("../fonts/ubuntu_bold.woff2") format("woff2");
-}@font-face {
+}
+@font-face {
   font-family: "MyriadPro-Cond";
   src: url("../fonts/myriadpro-cond.woff") format("woff"),
     url("../fonts/myriadpro-cond.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Bold.woff") format("woff"),
+    url("../fonts/Philosopher-Bold.woff2") format("woff2");
 }
 body {
   font-family: sans-serif;
@@ -445,7 +452,7 @@ button {
   .container {
     max-width: 380px !important;
   }
- #slider_bl article img {
+  #slider_bl article img {
     margin-left: 140px;
     width: 200px;
     height: 145px;

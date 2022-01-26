@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Bold.woff") format("woff"),
+    url("../fonts/Philosopher-Bold.woff2") format("woff2");
+}
