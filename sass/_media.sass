@@ -164,6 +164,33 @@
     &__button
       font-size: 16px
       padding: 15px 40px
+  .universities
+    &__icon
+      &--icon1
+        position: relative
+        top: -24px
+        width: 220px
+        left: -25px
+        right: 1px
+        z-index: 70
+      &--icon2
+        position: relative
+        top: -83px
+        left: -80px
+        width: 180px
+        right: 1px
+        z-index: 80
+      &--icon3
+        position: relative
+        top: -175px
+        width: 160px
+        left: 42px
+        right: 1px
+        z-index: 90    
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 15px
 @media ( max-width: 490px)
   .container
     max-width: 380px
@@ -171,6 +198,8 @@
     &__icon
       width: 40px
       height: 30px
+    &-wrapper
+      height: 40px
   .about
     &__text
       font-size: 20px
@@ -179,13 +208,35 @@
       font-size: 14px
       padding: 13px 35px
   .universities
+    margin-top: 0
+    &-mainblock
+      flex-wrap: wrap
+      height: auto
+    &-text
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding-right: 0
+      width: auto
+      text-align: center
+    &-icons
+      display: none
     &__title
-      font-size: 25px
+      margin-bottom: 40px
     &__subtitle
-      font-size: 12px
+      font-size: 18px
     &__img
       object-fit: cover
       height: 180px
+    &__icon
+      &--icon1, &--icon2, &--icon3
+        display: none
+        height: 1px
+      &--icon4
+        display: block
+        position: relative
+        top: -18px
+        width: 270px
 @media ( max-width: 380px)
   .container
     max-width: 315px
@@ -197,6 +248,14 @@
     &__text
       font-size: 18px
       margin-bottom: 45px
+  .universities
+    &__title
+      font-size: 28px
+    &__subtitle
+      font-size: 16px
+    &__icon
+      &--icon4
+        width: 220px
 @media ( max-width: 320px)
   .container
     max-width: 255px  
