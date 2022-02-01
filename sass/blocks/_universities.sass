@@ -1,18 +1,5 @@
 .universities
   margin-top: 50px
-  //   //width: 100%
-  // &-container
-  //   &::after
-  //     content: ''
-  //     position: absolute
-  //     width: 100%
-  //     height: 100%
-  //     top: 0
-  //     bottom: 0
-  //     left: 0
-  //     right: 0
-  //     z-index: 677
-  //     background: linear-gradient(180deg, rgb(107, 107, 107) 0%, rgba(255, 255, 255, 0.128) 100%)
   &-wrapper
     z-index: 99
   &-mainblock
@@ -26,14 +13,12 @@
     font-size: 70px
     font-weight: bold
     color: black
-    // text-transform: uppercase
   &__subtitle
     font-family: 'Comfortaa'
     font-size: 20px
     color: black
     font-weight: bold
   &__img
-    // object-fit: cover
     width: 100%
     height: 625px
   &-icons
@@ -75,19 +60,29 @@
       left: 0
       right: 0
       z-index: 2
-      background: linear-gradient( rgba(110, 110, 110, 0.5) 100%)
+      background: linear-gradient( rgba(121, 124, 131, 0.7) 100%)
   &__name
     font-family: Bebas Neue
     z-index: 3
-    color: black
-    position: relative
-    top: 0
+    color: $titleyellow
+    position: absolute
+    top: 50px
     margin: 0
-    //transform: translateY(-50%)
+    transform: translateY(350%)
+    font-size: 50px
     text-align: center
-    font-size: 30px
+    text-decoration: underline
+    cursor: pointer
+  &__name3
+    transform: translateY(140%)
+    text-align: center
+    top: 80px
+  &__title
+    display: flex
+    text-align: center
+    justify-content: center
 .body
-  background-color: #797c83//#585a5f
+  background-color: $background//#585a5f
 .header
   &__titleV2, &__subtitleV2
     color: #000

@@ -1,0 +1,32 @@
+.chgu
+  &-body
+    background: $background
+    padding-top: 0
+  &-info
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 2
+      background: linear-gradient( rgba(121, 124, 131, 0.75) 100%)
+  &__title
+    font-family: Bebas Neue
+    z-index: 3
+    color: $text-color
+    position: absolute
+    top: 50px
+    margin: 0
+    transform: translateY(350%)
+    font-size: 50px
+    text-align: center
+    cursor: pointer
+  &__name
+    display: flex
+    text-align: center
+    justify-content: center
