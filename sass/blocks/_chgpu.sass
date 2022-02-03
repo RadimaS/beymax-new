@@ -4,6 +4,7 @@
     padding-top: 0
   &-info
     position: relative
+    height: 500px
     &::after
       content: ''
       position: absolute
@@ -14,18 +15,30 @@
       left: 0
       right: 0
       z-index: 2
-      background: linear-gradient( rgba(121, 124, 131, 0.75) 100%)
+      background: linear-gradient( rgba(121, 124, 131, 0.8) 100%)
+  &__img
+    height: 500px
   &__title
     font-family: Bebas Neue
     z-index: 3
-    color: $text-color
+    color: #ffe73e//$text-color //#ffe73e
     position: absolute
-    top: 50px
+    top: 5px //50
     margin: 0
-    transform: translateY(350%)
+    transform: translateY(150%) //150
     font-size: 50px
     text-align: center
-    cursor: pointer
+  &__subtitle 
+    font-family: MyriadPro-Cond
+    z-index: 3
+    color: $text-color
+    position: absolute
+    top: 20px //50
+    margin: 0
+    width: 1200px
+    transform: translateY(90%) //100
+    font-size: 30px
+    text-align: center
   &__name
     display: flex
     text-align: center

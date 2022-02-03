@@ -3,3 +3,8 @@
   src: url("../fonts/Philosopher-Bold.woff") format("woff"),
     url("../fonts/Philosopher-Bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "MyriadPro-Cond";
+  src: url("../fonts/myriadpro-cond.woff") format("woff"),
+    url("../fonts/myriadpro-cond.woff2") format("woff2");
+}
