@@ -42,7 +42,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: black;
+  background-color: #F8F8F8;
 }
 a {
   text-decoration: none;
@@ -137,7 +137,7 @@ button {
   transition: all 1s ease-out 0.6s;
 }
 #slider_bl .info h1 {
-  color: #f8f8f8;
+  color: #000;
   margin: 0 0 5px;
   font-weight: 300;
   font-size: 60px;
@@ -146,7 +146,7 @@ button {
   font-family: "Bebas Neue";
 }
 #slider_bl .info h4 {
-  color: #f8f8f8;
+  color: #000;
   margin: 0 0 5px;
   font-weight: 300;
   font-size: 20px;
@@ -156,9 +156,9 @@ button {
   width: 100%;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  box-shadow: 1px 1px 4px #777;
   background: #fff;
-  background: #000000;
+  background: #F8F8F8;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
