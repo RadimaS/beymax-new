@@ -10,8 +10,11 @@
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+  &__link
+    display: block
   &__title
     margin: 0
+    color: black
   &__name
     background-color: white
     width: auto
@@ -26,7 +29,6 @@
   &__icon
     width: 100%
     height: 100%
-    background-image: url(../img/bermuda-190.png)
     background-size: contain
     background-repeat: no-repeat
     background-position: center
@@ -34,10 +36,16 @@
     z-index: 4
     background-color: lightblue 
     border: 1px solid transparent
-    border-radius: 10px 10px 0 0      
+    border-radius: 10px 10px 0 0   
+  &__card
+    width: 250px
+    height: 150px
+    margin-bottom: 100px
+    cursor: pointer  
 .medical
-  width: 250px
-  height: 150px
-  margin-bottom: 100px
-  cursor: pointer
-
+  &__icon
+    background-image: url(../img/bermuda-190.png)
+.philological
+  &__icon
+    background-image: url(../img/surr-574.png)
+    background-color: #621616

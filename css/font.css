@@ -8,3 +8,10 @@
   src: url("../fonts/myriadpro-cond.woff") format("woff"),
     url("../fonts/myriadpro-cond.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas-Neue.woff") format("woff"),
+    url("../fonts/Bebas-Neue.ttf") format("truetype"),
+    url("../fonts/HelveticaNeueBoldCondensed.ttf");
+  font-display: swap;
+}
