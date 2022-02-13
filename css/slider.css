@@ -122,7 +122,7 @@ button {
 }
 #slider_bl .slider-dot-control label:hover {
   background: #ccc;
-  border-color: #777;
+  border-color: #F8F8F8;
 }
 #slider_bl .info {
   position: absolute;
@@ -157,7 +157,6 @@ button {
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgb(180, 180, 180);
-  background: #fff;
   background: #F8F8F8;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -167,6 +166,15 @@ button {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+.slidee1 {
+  background: #3496c5;
+}
+.slidee2 {
+  background: #ebb233;
+}
+.slidee3 {
+  background: #a9596c;
 }
 #slider_bl .slider-wrapper .inner {
   -webkit-transform: translateZ(0);
@@ -210,7 +218,7 @@ button {
   line-height: 38px;
   font-size: 2em;
   display: block;
-  color: #777;
+  color: #F8F8F8;
 }
 #slider_bl
   #slide1:checked
