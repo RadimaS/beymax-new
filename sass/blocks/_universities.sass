@@ -1,5 +1,20 @@
 .universities
   margin-top: 50px
+  &__header
+    &--wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 52px
+  &__button
+    background: inherit
+    border: 1px solid #F8F8F8
+    border-radius: 5px
+    color: $text-color
+    font-family: 'Bebas Neue'
+    text-transform: uppercase
+    font-size: 17px
+    padding: 8px
   &-wrapper
     z-index: 99
   &-mainblock
@@ -86,6 +101,9 @@
 .header
   &__titleV2, &__subtitleV2
     color: #000
+  &__logo
+    display: flex
+    align-items: center
 .chgu, .ggntu, .chgpu
   &-body
     background: #eff6ff//$background
