@@ -28,7 +28,20 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    /> 
+    />
+    <!-- <link rel="stylesheet" href="js/chief-slider.min.css" />
+
+    <script defer src="js/chief-slider.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = new ChiefSlider(".slider", {
+          loop: true,
+          autoplay: true,
+          interval: 2000,
+        });
+      });
+    </script> -->
+    
   </head>
   <body>
     <header class="header header--mobile--fixed">
@@ -65,8 +78,8 @@
             <div class="inner">
               <article class="article slidee1">
                 <div class="info top-left">
-                  <h1>РќРѕРІР°СЏ СЂРѕР»СЊ</h1>
-                  <h4 class="info__text">РџРѕС‡СѓРІСЃС‚РІСѓР№ СЃРµР±СЏ СЃС‚СѓРґРµРЅС‚РѕРј</h4>
+                  <h1>Новая роль</h1>
+                  <h4 class="info__text">Почувствуй себя студентом</h4>
                 </div>
                 <div class="someth">
                   <img class="article__img" src="img/students.png" />
@@ -74,8 +87,8 @@
               </article>
               <article class="article slidee2">
                 <div class="info top-left">
-                  <h1>Р’С‹Р±РѕСЂ</h1>
-                  <h4 class="info__text">Р’С‹Р±РµСЂРё С‚Рѕ, С‡С‚Рѕ РїРѕ РґСѓС€Рµ РёРјРµРЅРЅРѕ С‚РµР±Рµ</h4>
+                  <h1>Выбор</h1>
+                  <h4 class="info__text">Выбери то, что по душе именно тебе</h4>
                 </div>
                 <div class="someth">
                   <img class="img2" src="img/please be patient.png" />
@@ -83,8 +96,8 @@
               </article>
               <article class="article slidee3">
                 <div class="info to p-left">
-                  <h1>Р’ РїСѓС‚СЊ!</h1>
-                  <h4 class="info__text">РћРїСЂРµРґРµР»Рё СЃРІРѕРµ РЅР°РїСЂР°РІР»РµРЅРёРµ</h4>
+                  <h1>В путь!</h1>
+                  <h4 class="info__text">Определи свое направление</h4>
                 </div>
                 <div class="someth">
                   <img class="article__img" src="img/road.png" />
@@ -110,12 +123,12 @@
       <div class="container">
         <div class="about-wrapper">
           <p class="about__text">
-            BEYMAX - СЌС‚Рѕ РїР»Р°С‚С„РѕСЂРјР°, РїСЂРёР·РІР°РЅРЅР°СЏ РѕР±Р»РµРіС‡РёС‚СЊ РІС‹Р±РѕСЂ РІСѓР·Р° Рё
-            РЅР°РїСЂР°РІР»РµРЅРёСЏ РѕР±СѓС‡РµРЅРёСЏ. Р—РґРµСЃСЊ РІС‹ РјРѕР¶РµС‚Рµ РѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ РїСЂРѕРіСЂР°РјРјРѕР№
-            РѕР±СѓС‡РµРЅРёСЏ РІСѓР·РѕРІ Рё С‚РµРј СЃР°РјС‹Рј РїСЂРёРјРµСЂРёС‚СЊ РЅР° СЃРµР±СЏ СЂРѕР»СЊ СЃС‚СѓРґРµРЅС‚Р°.
+            BEYMAX - это платформа, призванная облегчить выбор вуза и
+            направления обучения. Здесь вы можете ознакомиться с программой
+            обучения вузов и тем самым примерить на себя роль студента.
           </p>
           <form action="main.html">
-            <button class="button about__button">РџСЂРёСЃС‚СѓРїРёС‚СЊ</button>
+            <button class="button about__button">Приступить</button>
           </form>
         </div>
         <!-- /.about-wrapper -->
@@ -123,18 +136,8 @@
       <!-- /.container -->
     </div>
     <!-- /.about -->
-    <div class="instruction">
-      <div class="container">
-        <div class="instruction-wrapper">
-          <div class="instruction-text">
-            <h1 class="instruction__title">РљР°Рє СЌС‚Рѕ СЂР°Р±РѕС‚Р°РµС‚?</h1>
-          </div>
-          <!-- /.instruction-text -->
-        </div>
-        <!-- /.instruction-wrapper -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.instruction -->
+    <!-- <script src="js/chief-slider.dev.js"></script>
+    <script src="js/chief-slider.min.js"></script>
+    <script src="js/main.js"></script> -->
   </body>
 </html>
