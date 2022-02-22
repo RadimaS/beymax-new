@@ -28,7 +28,7 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    /> 
+    />
   </head>
   <body>
     <header class="header header--mobile--fixed">
@@ -114,27 +114,79 @@
             направления обучения. Здесь вы можете ознакомиться с программой
             обучения вузов и тем самым примерить на себя роль студента.
           </p>
-          <form action="main.html">
-            <button class="button about__button">Приступить</button>
-          </form>
+          <a href="#more">
+            <button class="button about__button">Подробнее</button>
+          </a>
         </div>
         <!-- /.about-wrapper -->
       </div>
       <!-- /.container -->
     </div>
     <!-- /.about -->
-    <div class="instruction">
+    <div class="app" id="more">
       <div class="container">
-        <div class="instruction-wrapper">
-          <div class="instruction-text">
-            <h1 class="instruction__title">Как это работает?</h1>
+        <div class="app-wrapper">
+          <div class="app-maintext">
+            <h1 class="app__title">О приложении</h1>
           </div>
-          <!-- /.instruction-text -->
+          <!-- /.app-text -->
+          <div class="app__paragraph app__paragraph1">
+            <p class="app__txt app__firsttxt">
+              Проблема поиска своего пути, поиска цели и того, что вызывает
+              больший интерес, в сопровождении страха перед неизвестностью,
+              очень актуальна в старших классах. <br />
+              Как раз это и подтолкнуло на создание данного сервиса.
+            </p>
+            <img
+              src="img/questions.png"
+              alt="image"
+              class="app__firstimg app__img"
+            />
+          </div>
+          <!-- /.paragraph1 -->
+
+          <div class="app__paragraph app__paragraph2">
+            <img
+              src="img/brain.png"
+              alt="image"
+              class="app__secondimg app__img"
+            />
+
+            <p class="app__txt app__secondtxt">
+              BEYMAX намерен снизить уровень этой неизвестности
+            </p>
+          </div>
+          <!-- /.paragraph2 -->
+
+          <div class="app__paragraph app__paragraph3">
+            <p class="app__txt app__thirdtxt">
+              Здесь у вас есть возможность узнать к чему готовиться, узнать, что
+              из себя представляет тот или иной факультет, направление. И
+              возможность эта заключается в том, что по предметам будут доступны
+              лекции и практики.
+            </p>
+            <img
+              src="img/done.png"
+              alt="image"
+              class="app__thirdimg app__img"
+            />
+          </div>
+          <!-- /.paragraph3 -->
+
+          <div class="app__paragraph app__paragraph4">
+            <img src="img/wink.png" alt="image" class="app__fourimg app__img" />
+            <p class="app__txt app__fourtxt">
+              Иными словами, вас больше не будет мучить вопрос: " А вдруг там все
+              не так, как я ожидаю? "  или  " Подходит ли мне это? ".  
+              По крайней мере, создатель сервиса надеется на это.
+            </p>
+          </div>
+          <!-- /.paragraph4 -->
         </div>
-        <!-- /.instruction-wrapper -->
+        <!-- /.app-wrapper -->
       </div>
       <!-- /.container -->
     </div>
-    <!-- /.instruction -->
+    <!-- /.app -->
   </body>
 </html>
