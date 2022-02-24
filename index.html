@@ -29,6 +29,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header header--mobile--fixed">
@@ -52,7 +53,7 @@
           </div>
           <!-- /.header__logo -->
 
-          <a action="main.html">
+          <a class="btn">
             <button class="button universities__button instruction__button">
               Как это работает?
             </button>
@@ -202,7 +203,11 @@
         <div class="about-wrapper">
           <p class="about__text instruction__text">
             Как пользоваться приложением можно узнать, кликнув по кнопке
-            <span class="instruction__questionBtn">как это работает?</span>.
+            <a class="btn">
+            <button class="button universities__button aboutlink__button instruction__button">
+              Как это работает?
+            </button>
+          </a>
             <br />
             После этого смело можете приступить к изучению. Желаю успехов!
           </p>
@@ -215,9 +220,9 @@
       <!-- /.container -->
     </div>
     <!-- /.about -->
-    <div class="instruction">
+    <div class="instruction modal">
       <div class="container">
-        <div class="instruction-wrapper">
+        <div class="instruction-wrapper modal__content">
           <div class="instruction-maintext">
             <h1 class="instruction__title">как это работает</h1>
           </div>
@@ -229,7 +234,7 @@
               class="instruction__icon"
             />
             <p class="instruction__txt">
-              Нажимая кнопку "Приступить", вы попадёте на страницу с вузами.
+              Нажимая на кнопку "Приступить", вы попадёте на страницу с вузами.
             </p>
           </div>
           <!-- /.instruction__step1 -->

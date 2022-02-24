@@ -1,9 +1,11 @@
 .instruction
-  //display: none
+  display: none
   &__button
     color: $mainblue
     border: 1px solid $mainblue
     font-size: 20px
+    &:hover
+      background: $hover
   &__text
     margin-top: 80px
   &__questionBtn
@@ -18,7 +20,8 @@
     color: $mainblue
     margin-top: 0
     text-align: center
-    padding-top: 40px
+    padding-top: 10px//40px
+    margin-bottom: 10px
   &__step
     display: flex
     justify-content: start
@@ -31,3 +34,52 @@
   &__icon
     width: 30px
     margin-right: 20px
+.modal
+  position: absolute
+  visibility: hidden
+  opacity: 0
+  transition: .3s
+  top: -1000px
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1000
+  background: rgba(255, 255, 255, 0.9)
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  overflow-y: scroll
+  padding: 15px
+  &--active
+    position: fixed
+    top: 0
+    visibility: visible
+    opacity: 1
+    transition: .3s
+  &__content
+    width: 100%
+    max-width: 1000px
+    padding: 50px
+    background: $background
+    border-radius: 3px
+    position: relative
+    box-shadow: 0 3px 5px black
+
+ 
+// .modal__close-button {
+//   background: #ff0000
+//   height: 30px
+//   width: 30px
+//   display: flex
+//   justify-content: center
+//   align-items: center
+//   border: none
+//   position: absolute
+//   right: 0
+//   top: 0
+//   background: none
+//   cursor: pointer
+//   transition: .3s
+//   outline: none
+// }
+ 

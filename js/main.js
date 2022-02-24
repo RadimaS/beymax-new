@@ -1,6 +1,13 @@
-// document.getElementById("button").style.backgroundColor = "black";
+const instructionFunc = () => {
+  const instructionBtn = document.querySelector(".instruction__button");
+  const aboutBtn = document.querySelector(".aboutlink__button");
+  const instructionBlock = document.querySelector(".modal");
 
-// document.getElementById("button").onclick = function () {
-//   this.style.backgroundColor = "gray";
-// };
-{/* <script src="http://atuin.ru/js/art/stars.js" type="text/javascript"></script>; */}
+  instructionBtn.addEventListener("click", () => {
+    instructionBlock.classList.add("modal--active");
+  });
+  aboutBtn.addEventListener("click", () => {
+    instructionBlock.classList.add("modal--active");
+  });
+};
+instructionFunc();
