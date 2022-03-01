@@ -34,6 +34,13 @@
   &__icon
     width: 30px
     margin-right: 20px
+  &__close
+    display: flex
+    justify-content: flex-end
+    &--icon
+      width: 15px
+      cursor: pointer
+
 .modal
   position: absolute
   visibility: hidden
@@ -59,14 +66,14 @@
   &__content
     width: 100%
     max-width: 1000px
-    padding: 50px
+    padding: 40px 50px 50px
     background: $background
     border-radius: 3px
     position: relative
     box-shadow: 0 3px 5px black
 
  
-// .modal__close-button {
+// .modal__close-button 
 //   background: #ff0000
 //   height: 30px
 //   width: 30px
@@ -81,5 +88,5 @@
 //   cursor: pointer
 //   transition: .3s
 //   outline: none
-// }
+
  
