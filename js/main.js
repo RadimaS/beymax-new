@@ -1,7 +1,7 @@
 const instructionFunc = () => {
   const instructionBtn = document.querySelector(".instruction__button");
   const aboutBtn = document.querySelector(".aboutlink__button");
-  const closeBtn = document.querySelector('.instruction__close--icon')
+  const closeBtn = document.querySelector(".instruction__close--icon");
   const instructionBlock = document.querySelector(".modal");
 
   instructionBtn.addEventListener("click", () => {
@@ -13,5 +13,6 @@ const instructionFunc = () => {
   closeBtn.addEventListener("click", () => {
     instructionBlock.classList.remove("modal--active");
   });
+
 };
 instructionFunc();
