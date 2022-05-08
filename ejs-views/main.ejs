@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <%- include ('./partials/head.ejs')%>
+  </head>
+
+  <body class="main__body">
+    <header class="header header--mobile--fixed">
+      <%- include ('./partials/header-black-theme.ejs')%>
+    </header>
+
+    <div class="universities">
+      <div class="container">
+        <div class="universities-wrapper">
+          <div class="universities-mainblock">
+            <div class="universities-text">
+              <h1 class="universities__title">
+                На этой странице представлены вузы нашей республики
+              </h1>
+              <img
+                class="universities__icon--icon4"
+                src="/presentation1.0-removebg.png"
+                alt="icon: icon"
+              />
+              <p class="universities__subtitle">
+                Переходи и знакомься с каждым
+              </p>
+            </div>
+            <!-- /.universities-text -->
+            <div class="universities-icons">
+              <img
+                class="universities__icon universities__icon--icon1"
+                src="/search.png"
+                alt="icon: icon"
+              /><img
+                class="universities__icon universities__icon--icon2"
+                src="/success.png"
+                alt="icon: icon"
+              /><img
+                class="universities__icon universities__icon--icon3"
+                src="/location.png"
+                alt="icon: icon"
+              /><img
+                class="universities__icon--icon4"
+                src="/presentation1.0-removebg.png"
+                alt="icon: icon"
+              />
+            </div>
+            <!-- /.universities-icons -->
+          </div>
+          <!-- /.universities-mainblock -->
+        </div>
+        <!-- /.universities-wrapper -->
+      </div>
+      <!-- ./container -->
+      <div class="universities-blocks">
+        <div class="universities-images">
+          <div class="universities-container">
+            <% if (universities.length) { %> <% universities.forEach(({id,
+            blockName, universityName, nameClass }) => { %>
+            <div class="university university__<%=blockName%>">
+              <div class="university__title">
+                <a href="/main/<%=id%>" class="university__name <%=nameClass%>"
+                  ><%=universityName%></a
+                >
+              </div>
+              <img
+                class="universities__img"
+                src="/<%=blockName%>.jpg"
+                alt="image: university"
+              />
+            </div>
+            <% }) %> <% } %>
+          </div>
+          <!-- /.universities-container -->
+        </div>
+        <!-- /.universities-images -->
+      </div>
+      <!-- /.blocks -->
+    </div>
+    <!-- /.universities -->
+  </body>
+</html>

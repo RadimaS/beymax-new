@@ -7,9 +7,9 @@ const instructionFunc = () => {
   instructionBtn.addEventListener("click", () => {
     instructionBlock.classList.add("modal--active");
   });
-  aboutBtn.addEventListener("click", () => {
-    instructionBlock.classList.add("modal--active");
-  });
+  // aboutBtn.addEventListener("click", () => {
+  //   instructionBlock.classList.add("modal--active");
+  // });
   closeBtn.addEventListener("click", () => {
     instructionBlock.classList.remove("modal--active");
   });

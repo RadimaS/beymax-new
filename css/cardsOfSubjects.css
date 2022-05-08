@@ -1,0 +1,109 @@
+.directions-text {
+  text-align: center;
+}
+.directions__title {
+  font-family: bebas neue;
+  font-size: 4vw;
+  color: #120431;
+  margin-top: 68px;
+}
+.directions__body {
+  padding-top: 0;
+}
+.direction {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: start;
+  flex-wrap: wrap;
+  max-height: max-content;
+}
+.directionarrow {
+  height: 3.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.direction__block {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #54b4c1;
+  width: 100%;
+  /*height: 70%*/
+}
+.direction__title {
+  margin: 0;
+  color: black;
+}
+.direction__name {
+  background-color: white;
+  width: auto;
+  height: 10vw /*65px*/;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2vw;
+  font-family: Comfortaa;
+  border-radius: 10px 10px 0 0;
+}
+.direction__card {
+  width: 35vw /*250px*/;
+  height: auto;
+  margin-bottom: 3vw;
+}
+.subjects {
+  max-height: 0;
+  display: none;
+  transition: max-height 5s ease;
+}
+.subjects__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vw;
+  border-bottom: 1px solid #54b4c1;
+  background-color: #c5f2f8;
+  font-family: bebas neue;
+  font-size: 1.8vw;
+}
+.subjects__name {
+  color: #120431;
+}
+.subjects:hover {
+  background-color: #9de3ec;
+  transition: 0.4s;
+}
+.direction__card.show .subjects {
+  max-height: max-content;
+  display: block;
+}
+.direction__card.show img {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 995px) and (min-width: 250px) {
+  .direction {
+    grid-template-columns: 100%;
+  }
+  .direction__card {
+    width: 70vw;
+    margin-bottom: 8vw;
+  }
+  .directions__title {
+    font-size: 6vw;
+    margin-bottom: 8vw;
+  }
+  .direction__name {
+    font-size: 3vw;
+  }
+  .directionarrow {
+    height: 4.5vw;
+  }
+  .subjects__item {
+    font-size: 3vw;
+    height: 8vw;
+  }
+}

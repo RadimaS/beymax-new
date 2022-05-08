@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Philosopher";
-  src: url("../fonts/Philosopher-Bold.woff") format("woff"),
-    url("../fonts/Philosopher-Bold.woff2") format("woff2");
+  src: url("/Philosopher-Bold.woff") format("woff"),
+    url("/Philosopher-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "MyriadPro-Cond";
-  src: url("../fonts/myriadpro-cond.woff") format("woff"),
-    url("../fonts/myriadpro-cond.woff2") format("woff2");
+  src: url("/myriadpro-cond.woff") format("woff"),
+    url("/myriadpro-cond.woff2") format("woff2");
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/Bebas-Neue.woff") format("woff"),
-    url("../fonts/Bebas-Neue.ttf") format("truetype"),
-    url("../fonts/HelveticaNeueBoldCondensed.ttf");
+  src: url("/Bebas-Neue.woff") format("woff"),
+    url("/Bebas-Neue.ttf") format("truetype"),
+    url("/HelveticaNeueBoldCondensed.ttf");
   font-display: swap;
 }

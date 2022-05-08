@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <%- include ('./partials/head.ejs')%>
+  </head>
+  <body class="index__body">
+    <header class="header header--mobile--fixed">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header__logo">
+            <div class="header-icon">
+              <a href="#">
+                <img
+                  class="header__icon"
+                  src="/header-icon.png"
+                  alt="icon: cute cloud"
+                />
+              </a>
+            </div>
+
+            <div class="header-text">
+              <p class="header__title">BEYMAX</p>
+              <p class="header__subtitle">be your max</p>
+            </div>
+          </div>
+          <!-- /.header__logo -->
+
+          <a class="btn">
+            <button class="button universities__button instruction__button">
+              Как это работает?
+            </button>
+          </a>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header header--mobile--fixed -->
+    <section class="slider" id="slider_bl">
+      <div class="container">
+        <div class="wrapper">
+          <input checked type="radio" name="slider" id="slide1" />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
+          <div class="slider-wrapper">
+            <div class="inner">
+              <article class="article slidee1">
+                <div class="info top-left">
+                  <h1>Новая роль</h1>
+                  <h4 class="info__text">Почувствуй себя студентом</h4>
+                </div>
+                <div class="someth">
+                  <img class="article__img" src="/students.png" />
+                </div>
+              </article>
+              <article class="article slidee2">
+                <div class="info top-left">
+                  <h1>Выбор</h1>
+                  <h4 class="info__text">Выбери то, что по душе именно тебе</h4>
+                </div>
+                <div class="someth">
+                  <img class="img2" src="/please be patient.png" />
+                </div>
+              </article>
+              <article class="article slidee3">
+                <div class="info to p-left">
+                  <h1>В путь!</h1>
+                  <h4 class="info__text">Определи свое направление</h4>
+                </div>
+                <div class="someth">
+                  <img class="article__img" src="/road.png" />
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="slider-prev-next-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+          <div class="slider-dot-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <div class="about">
+      <div class="container">
+        <div class="about-wrapper">
+          <p class="about__text">
+            BEYMAX - это приложение, призванное облегчить выбор вуза и
+            направления обучения. Здесь вы можете ознакомиться с программой
+            обучения вузов и тем самым примерить на себя роль студента.
+          </p>
+          <a href="#more">
+            <button class="button about__button">Подробнее</button>
+          </a>
+        </div>
+        <!-- /.about-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.about -->
+    <div class="app" id="more">
+      <div class="container">
+        <div class="app-wrapper">
+          <div class="app-maintext">
+            <h1 class="app__title">О приложении</h1>
+          </div>
+          <!-- /.app-text -->
+          <div class="app__paragraph app__paragraph1">
+            <p class="app__txt app__firsttxt">
+              Проблема поиска своего пути, поиска цели и того, что вызывает
+              больший интерес, в сопровождении страха перед неизвестностью,
+              очень актуальна в старших классах. <br />
+              Как раз это и подтолкнуло на создание данного приложения.
+            </p>
+            <img
+              src="/questions.png"
+              alt="image"
+              class="app__firstimg app__img"
+            />
+          </div>
+          <!-- /.paragraph1 -->
+
+          <div class="app__paragraph app__paragraph2">
+            <img src="/brain.png" alt="image" class="app__secondimg app__img" />
+
+            <p class="app__txt app__secondtxt">
+              BEYMAX намерен снизить уровень этой неизвестности
+            </p>
+          </div>
+          <!-- /.paragraph2 -->
+
+          <div class="app__paragraph app__paragraph3">
+            <p class="app__txt app__thirdtxt">
+              Здесь у вас есть возможность узнать к чему готовиться, узнать, что
+              из себя представляет тот или иной факультет, направление. И
+              возможность эта заключается в том, что по предметам будут доступны
+              лекции и практики.
+            </p>
+            <img src="/done.png" alt="image" class="app__thirdimg app__img" />
+          </div>
+          <!-- /.paragraph3 -->
+
+          <div class="app__paragraph app__paragraph4">
+            <img src="/wink.png" alt="image" class="app__fourimg app__img" />
+            <p class="app__txt app__fourtxt">
+              Иными словами, вас больше не будет мучить вопрос: " А вдруг там
+              все не так, как я ожидаю? " или " Подходит ли мне это? ". По
+              крайней мере, разработчик приложения надеется на это.
+            </p>
+          </div>
+          <!-- /.paragraph4 -->
+        </div>
+        <!-- /.app-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.app -->
+    <div class="about">
+      <div class="container">
+        <div class="about-wrapper">
+          <p class="about__text instruction__text">
+            Как пользоваться приложением можно узнать, кликнув по кнопке
+
+            <span class="aboutlink__button"> Как это работает? </span>
+            <br />
+            После этого смело можете приступить к изучению. Желаю успехов!
+          </p>
+          <a href="main">
+            <button class="button about__button">приступить</button>
+          </a>
+        </div>
+        <!-- /.about-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.about -->
+    <div class="instruction modal">
+      <div class="container">
+        <div class="instruction-wrapper modal__content">
+          <div class="instruction__close">
+            <img
+              src="/close1.png"
+              alt="close"
+              class="instruction__close--icon"
+            />
+          </div>
+          <div class="instruction-maintext">
+            <h1 class="instruction__title">как это работает</h1>
+          </div>
+          <!-- /.instruction-text -->
+          <div class="instruction__step instruction__step1">
+            <img
+              src="/elemnt2.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              Нажимая на кнопку "Приступить", вы попадёте на страницу с вузами.
+            </p>
+          </div>
+          <!-- /.instruction__step1 -->
+
+          <div class="instruction__step instruction__step2">
+            <img
+              src="/elemnt4.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              Кликнув по названию вуза, вам откроются факультеты и институты,
+              которые в нем имеются.
+            </p>
+          </div>
+          <!-- /.instruction__step2 -->
+
+          <div class="instruction__step instruction__step3">
+            <img
+              src="/elemnt5.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              В свою очередь, факультеты и институты содержат в себе направления
+              обучения.
+            </p>
+          </div>
+          <!-- /.instruction__step3 -->
+
+          <div class="instruction__step instruction__step4">
+            <img
+              src="/elemnt3.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              Под каждым направлением обучения, в виде выпадающего списка,
+              расположены предметы, которым обучают студентов.
+            </p>
+          </div>
+          <!-- /.instruction__step4 -->
+
+          <div class="instruction__step instruction__step5">
+            <img
+              src="/elemnt1.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              И, кликая по каждому предмету, вы получаете лекцию с практикой.
+            </p>
+          </div>
+          <!-- /.instruction__step5 -->
+
+          <div class="instruction__step instruction__step6">
+            <img
+              src="/elemnt6.png"
+              alt="icon: yellow figure"
+              class="instruction__icon"
+            />
+            <p class="instruction__txt">
+              Далее изучаете лекцию и выполняете практику. Всё. <br />
+              P.S. За невыполнение практики двойку ставить никто не будет ;)
+            </p>
+          </div>
+          <!-- /.instruction__step6 -->
+        </div>
+        <!-- /.instruction-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.instruction -->
+  </body>
+</html>
