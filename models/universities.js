@@ -26,6 +26,7 @@ const universitiesSchema = new Schema(
     nameClass: {
       type: String,
     },
+    faculties: [{ type: Schema.Types.ObjectId, ref: "Faculties" }],
   },
   { timestamps: true }
 );

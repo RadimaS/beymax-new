@@ -40,7 +40,7 @@
 .direction__name {
   background-color: white;
   width: auto;
-  height: 10vw /*65px*/;
+  height: 14vw /*65px*/;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,7 @@
   }
   .direction__name {
     font-size: 3vw;
+    height: 17vw;
   }
   .directionarrow {
     height: 4.5vw;

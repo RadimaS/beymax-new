@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <%-include('./partials/head-of-unv.ejs')%>
+  </head>
+  <body class="chgu-body">
+    <header class="header2 header--mobile--fixed chgu__header">
+      <%- include ('./partials/header.ejs')%>
+    </header>
+
+    <%- include ('./partials/universities-description.ejs')%>
+
+    <div class="faculties">
+      <div class="container">
+        <div class="faculties-wrapper">
+          <div class="faculties-text">
+            <h1 class="faculties__title">Факультеты и Институты</h1>
+          </div>
+          <!-- /.faculties-text -->
+          <div class="faculty">
+            <% for(var i=0; i < university.faculties.length; i++) {%>
+            <a href="/subjects/<%= university.faculties[i].id %>" class="faculty__link">
+              <div class="faculty__card <%= university.faculties[i].class %>">
+                <div
+                  class="faculty__icon <%= university.faculties[i].class %>__icon"
+                ></div>
+                <div class="faculty__name">
+                  <p class="faculty__title">
+                    <%= university.faculties[i].title %>
+                  </p>
+                </div>
+              </div>
+              <!-- /.philological -->
+            </a>
+            <% } %>
+            <!-- /.faculty__link -->
+          </div>
+          <!-- /.faculty -->
+        </div>
+        <!-- /.faculties-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.faculties -->
+  </body>
+</html>

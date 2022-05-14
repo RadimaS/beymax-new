@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <%-include('./partials/head.ejs')%>
+  </head>
+
+  <body class="directions__body">
+    <header class="header header--mobile--fixed">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header__logo">
+            <div class="header-icon">
+              <a href="/">
+                <img
+                  class="header__icon"
+                  src="/header-icon.png"
+                  alt="icon: cute cloud"
+                />
+              </a>
+            </div>
+
+            <div class="header-text">
+              <p class="header__title header__titleV2">BEYMAX</p>
+              <p class="header__subtitle header__subtitleV2">be your max</p>
+            </div>
+          </div>
+          <!-- /.header__logo -->
+
+          <a href="<%=link%>">
+            <button class="button universities__button main__button">
+              Вернуться
+            </button>
+          </a>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <div class="directions">
+      <div class="container">
+        <div class="directions-wrapper">
+          <div class="directions-text">
+            <h1 class="directions__title">направления обучения</h1>
+          </div>
+          <!-- ./directions-text -->
+          <div class="direction">
+            <% for(var i=0; i < faculty.directions.length; i++) {%>
+            <div class="direction__card">
+              <div class="direction__block">
+                <div class="direction__name">
+                  <p class="direction__title">
+                    <%= faculty.directions[i].title %>
+                  </p>
+                </div>
+
+                <div class="subjects">
+                  <div class="subjects__block">
+                    <div class="subjects__item">
+                      <a target="_blank" class="subjects__name" href="/lecture"
+                        ><%= faculty.directions[i].item1 %>
+                      </a>
+                    </div>
+                    <div class="subjects__item">
+                      <a target="_blank" class="subjects__name" href="/lecture"
+                        ><%= faculty.directions[i].item2 %>
+                      </a>
+                    </div>
+                    <div class="subjects__item">
+                      <a target="_blank" class="subjects__name" href="/lecture"
+                        ><%= faculty.directions[i].item3 %>
+                      </a>
+                    </div>
+                    <div class="subjects__item">
+                      <a target="_blank" class="subjects__name" href="/lecture"
+                        ><%= faculty.directions[i].item4 %>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <img src="/down2.png" alt="" class="directionarrow" />
+              </div>
+              <!-- /.direction__block -->
+            </div>
+            <!-- /.direction__card -->
+            <% } %>
+          </div>
+          <!-- /.direction -->
+        </div>
+        <!-- /.directions-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.directions -->
+    <script src="/arrow.js" defer></script>
+  </body>
+</html>
