@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <%-include('./partials/head.ejs')%>
+    <%-include('./partials/head-of-unv.ejs')%>
   </head>
 
   <body class="directions__body">
@@ -45,38 +45,29 @@
           </div>
           <!-- ./directions-text -->
           <div class="direction">
-            <% for(var i=0; i < faculty.directions.length; i++) {%>
+            <% for(var i=0; i < faculty.getdirections.length; i++) {%>
+            
             <div class="direction__card">
               <div class="direction__block">
                 <div class="direction__name">
                   <p class="direction__title">
-                    <%= faculty.directions[i].title %>
+                    <%= faculty.getdirections[i].title %>
                   </p>
                 </div>
 
                 <div class="subjects">
                   <div class="subjects__block">
+                    
+                    <% for(var j=0; j < faculty.subjects.length; j++) {%>
                     <div class="subjects__item">
-                      <a target="_blank" class="subjects__name" href="/lecture"
-                        ><%= faculty.directions[i].item1 %>
+                      <a target="_blank" class="subjects__name" href="/subjects/<%= faculty.subjects[i].id%>"
+                        >
+                        <%= faculty.subjects[j].item %>
                       </a>
                     </div>
-                    <div class="subjects__item">
-                      <a target="_blank" class="subjects__name" href="/lecture"
-                        ><%= faculty.directions[i].item2 %>
-                      </a>
-                    </div>
-                    <div class="subjects__item">
-                      <a target="_blank" class="subjects__name" href="/lecture"
-                        ><%= faculty.directions[i].item3 %>
-                      </a>
-                    </div>
-                    <div class="subjects__item">
-                      <a target="_blank" class="subjects__name" href="/lecture"
-                        ><%= faculty.directions[i].item4 %>
-                      </a>
-                    </div>
+                     <% } %>
                   </div>
+                    
                 </div>
 
                 <img src="/down2.png" alt="" class="directionarrow" />

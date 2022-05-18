@@ -14,7 +14,8 @@ const facultiesSchema = new Schema({
     type: String,
     required: true,
   },
-  directions: [{ type: Schema.Types.ObjectId, ref: "Directions" }],
+  getdirections: [{ type: Schema.Types.ObjectId, ref: "GetDirections" }],
+  subjects: [{ type: Schema.Types.ObjectId, ref: "Subjects" }],
 });
 
 const Faculties = mongoose.model("Faculties", facultiesSchema);

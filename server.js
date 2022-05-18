@@ -6,10 +6,13 @@ const mongoose = require("mongoose");
 const Universities = require("./models/universities");
 const Faculties = require("./models/faculties");
 const Directions = require("./models/directions");
+const GetDirections = require("./models/getdirections");
+const Subjects = require("./models/subjects");
+const Lecture = require("./models/lectures");
 
 app.set("view engine", "ejs");
 
-const PORT = 3000;
+const PORT = 4000;
 const db =
   "mongodb+srv://radima:55256636qQ.@cluster0.xxtq4.mongodb.net/beymax-data?retryWrites=true&w=majority";
 mongoose
@@ -76,13 +79,14 @@ app.get("/main/:id", (req, res) => {
     });
 });
 
-app.get("/subjects/:id", (req, res) => {
+app.get("/directions/:id", (req, res) => {
   const link = "/main";
   const img = "/favicon.png";
   Faculties.findById(req.params.id)
-    .populate("directions")
+    .populate("getdirections")
+    .populate("subjects")
     .then((faculty) =>
-      res.render(createPath("subjects"), {
+      res.render(createPath("directions"), {
         faculty,
         link,
         title: faculty.title,
@@ -95,6 +99,27 @@ app.get("/subjects/:id", (req, res) => {
       res.render(createPath("error"), { title: "Error" });
     });
 });
+
+app.get("/subjects/:id", (req, res) => {
+  const link = "/main";
+  const img = "/favicon.png";
+  Subjects.findById(req.params.id)
+    .populate("lectures")
+    .then((subject) =>
+      res.render(createPath("lecture"), {
+        subject,
+        link,
+        title: subject.title,
+
+        img,
+      })
+    )
+    .catch((error) => {
+      console.log(error);
+      res.render(createPath("error"), { title: "Error" });
+    });
+});
+
 app.get("/lecture", (req, res) => {
   const link = "/main";
   const title = "Ознакомление";

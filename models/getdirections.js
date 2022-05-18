@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const directionsSchema = new Schema({
+const directionsNewSchema = new Schema({
   title: {
     type: String,
     required: true,
@@ -13,6 +13,6 @@ const directionsSchema = new Schema({
   subjects: [{ type: Schema.Types.ObjectId, ref: "Subjects" }],
 });
 
-const Directions = mongoose.model("Directions", directionsSchema);
+const GetDirections = mongoose.model("GetDirections", directionsNewSchema);
 
-module.exports = Directions;
+module.exports = GetDirections;
