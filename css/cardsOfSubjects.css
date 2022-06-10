@@ -39,6 +39,7 @@
 }
 .direction__name {
   background-color: white;
+  border: 1px solid #54b4c1;
   width: auto;
   height: 14vw /*65px*/;
   display: flex;

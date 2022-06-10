@@ -5,38 +5,40 @@
   <body class="directions__body">
     <header class="header header--mobile--fixed">
       <%- include ('./partials/header-black-theme.ejs')%>
+      
+      <!-- /.container -->
     </header>
+          <% for(var i=0; i < subject.lectures.length; i++) {%>
 
     <div class="directions">
       <div class="container">
         <div class="directions-wrapper">
           <div class="directions-text">
-            <h1 class="directions__title">лекция</h1>
+            <h1 class="directions__title">
+              лекция | <%= subject.lectures[i].item%>
+            </h1>
           </div>
           <!-- ./directions-text -->
           <div class="lecture">
-            <% for(var i=0; i < subject.lectures.length; i++) {%>
-          <div class="lecture__body">
-            <span class="lecture__text"
-              >
-              <p class="lecture__maintext">
-                <%= subject.lectures[i].lecture%>
-              </p>
-            </span>
+            <div class="lecture__body">
+              <span class="lecture__text">
+                <p class="lecture__maintext">
+                  <%= subject.lectures[i].lecture%>
+                </p>
+              </span>
+            </div>
+            <div class="directions-text">
+              <h1 class="directions__title">практика</h1>
+            </div>
+            <div class="lecture__body practice__title">
+              <span class="lecture__text"
+                ><span class="lecture__title">
+                  <%= subject.lectures[i].practice%></span
+                >
+              </span>
+            </div>
+            <% } %>
           </div>
-          <div class="directions-text">
-            <h1 class="directions__title">практика</h1>
-          </div>
-          <div class="lecture__body practice__title">
-            <span class="lecture__text"
-              ><span class="lecture__title">
-                 <%= subject.lectures[i].practice%></span
-              >
-            </span>
-          </div> 
-          <% } %>
-        </div>
-       
         </div>
       </div>
     </div>

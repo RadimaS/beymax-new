@@ -14,7 +14,7 @@ const lectures = new Schema({
     type: String,
     required: true,
   },
-  // directionsNew: [{ type: Schema.Types.ObjectId, ref: "DirectionsNew" }],
+  faculties: [{ type: Schema.Types.ObjectId, ref: "Faculties" }],
 });
 
 const Lectures = mongoose.model("Lectures", lectures);

@@ -3,40 +3,12 @@
   <head>
     <%-include('./partials/head-of-unv.ejs')%>
   </head>
-
+ 
   <body class="directions__body">
     <header class="header header--mobile--fixed">
-      <div class="container">
-        <div class="header-wrapper">
-          <div class="header__logo">
-            <div class="header-icon">
-              <a href="/">
-                <img
-                  class="header__icon"
-                  src="/header-icon.png"
-                  alt="icon: cute cloud"
-                />
-              </a>
-            </div>
-
-            <div class="header-text">
-              <p class="header__title header__titleV2">BEYMAX</p>
-              <p class="header__subtitle header__subtitleV2">be your max</p>
-            </div>
-          </div>
-          <!-- /.header__logo -->
-
-          <a href="<%=link%>">
-            <button class="button universities__button main__button">
-              Вернуться
-            </button>
-          </a>
-        </div>
-        <!-- /.header-wrapper -->
-      </div>
-      <!-- /.container -->
+      <%- include ('./partials/header-black-theme.ejs')%>
     </header>
-
+ 
     <div class="directions">
       <div class="container">
         <div class="directions-wrapper">
@@ -45,8 +17,7 @@
           </div>
           <!-- ./directions-text -->
           <div class="direction">
-            <% for(var i=0; i < faculty.getdirections.length; i++) {%>
-            
+            <% for(var i=0; i < faculty.getdirections.length; i++) {%>          
             <div class="direction__card">
               <div class="direction__block">
                 <div class="direction__name">
@@ -54,22 +25,19 @@
                     <%= faculty.getdirections[i].title %>
                   </p>
                 </div>
-
                 <div class="subjects">
                   <div class="subjects__block">
-                    
-                    <% for(var j=0; j < faculty.subjects.length; j++) {%>
+                    <% for(var j=0; j < faculty.getdirections[i].subjects.length; j++) {%>
                     <div class="subjects__item">
-                      <a target="_blank" class="subjects__name" href="/subjects/<%= faculty.subjects[i].id%>"
+                      <a target="_blank" class="subjects__name" 
+                      href="/subjects/<%= faculty.getdirections[i].subjects[j].id%>"
                         >
-                        <%= faculty.subjects[j].item %>
+                        <%= faculty.getdirections[i].subjects[j].item %>
                       </a>
                     </div>
                      <% } %>
                   </div>
-                    
                 </div>
-
                 <img src="/down2.png" alt="" class="directionarrow" />
               </div>
               <!-- /.direction__block -->
