@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RadimaS/help.git"
+    "url": "git+https://github.com/RadimaS/beymax-new.git"
   },
   "author": "Radi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RadimaS/help/issues"
+    "url": "https://github.com/RadimaS/beymax-new/issues"
   },
-  "homepage": "https://github.com/RadimaS/help#readme",
+  "homepage": "https://github.com/RadimaS/beymax-new#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
