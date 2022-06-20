@@ -80,7 +80,7 @@ app.get("/main/:id", (req, res) => {
     });
 });
  
-app.get("/directions/:id", (req, res) => {
+app.get("/faculty/:id", (req, res) => {
   const link = "/main";
   const img = "/favicon.png";
   const title = "Направления  подготовки";
@@ -91,7 +91,7 @@ app.get("/directions/:id", (req, res) => {
  
     }})
     .then((faculty) => {
-          return res.render(createPath("directions"), {
+          return res.render(createPath("faculty"), {
             faculty,
             link,
             title,
