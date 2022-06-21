@@ -4,8 +4,28 @@
 
   <body class="directions__body">
     <header class="header header--mobile--fixed">
-      <%- include ('./partials/header-black-theme.ejs')%>
-      
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header__logo">
+            <div class="header-icon">
+              <a href="/">
+                <img
+                  class="header__icon"
+                  src="/header-icon.png"
+                  alt="icon: cute cloud"
+                />
+              </a>
+            </div>
+
+            <div class="header-text">
+              <p class="header__title header__titleV2">BEYMAX</p>
+              <p class="header__subtitle header__subtitleV2">be your max</p>
+            </div>
+          </div>
+          <!-- /.header__logo -->
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
       <!-- /.container -->
     </header>
           <% for(var i=0; i < subject.lectures.length; i++) {%>
